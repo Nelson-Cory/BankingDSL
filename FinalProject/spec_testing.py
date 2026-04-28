@@ -57,9 +57,9 @@ def display_test_options():
         return result
 
 def run_all_tests():
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestBankAccount)
+    testing_suite = unittest.TestLoader().loadTestsFromTestCase(TestBankAccount)
     runner = unittest.TextTestRunner(verbosity=2)
-    runner.run(suite)
+    runner.run(testing_suite)
 
 
 class TestBankAccount(unittest.TestCase):
